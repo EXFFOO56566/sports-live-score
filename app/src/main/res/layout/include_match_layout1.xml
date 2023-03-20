@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fixtureLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <RelativeLayout
+                android:id="@+id/homeTeamLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@+id/scoreDateLayout"
+                android:layout_toLeftOf="@+id/scoreDateLayout"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/teamAName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toStartOf="@+id/teamAImage"
+                    android:layout_toLeftOf="@+id/teamAImage"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:textColor="#5A5A63"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:text="Random Name Long Long Long Here to kbow df" />
+
+                <ImageView
+                    android:id="@+id/teamAImage"
+                    android:layout_width="@dimen/fixture_team_icon_size"
+                    android:layout_height="@dimen/fixture_team_icon_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/football" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scoreDateLayout"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <include layout="@layout/include_fixture_finished" />
+
+                <include layout="@layout/include_fixture_layout" />
+
+                <include layout="@layout/include_live_game_layout" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/visitingTeamLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/scoreDateLayout"
+                android:layout_toRightOf="@+id/scoreDateLayout"
+                android:layout_weight="1"
+                android:gravity="center_vertical|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/teamBImage"
+                    android:layout_width="@dimen/fixture_team_icon_size"
+                    android:layout_height="@dimen/fixture_team_icon_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/football" />
+
+                <TextView
+                    android:id="@+id/teamBName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/favoriteFixture"
+                    android:layout_toLeftOf="@+id/favoriteFixture"
+                    android:layout_toEndOf="@+id/teamBImage"
+                    android:layout_toRightOf="@+id/teamBImage"
+                    android:maxLines="1"
+                    android:textColor="#5A5A63"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:text="Random Name Name Name" />
+
+                <ImageView
+                    android:id="@+id/favoriteFixture"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_star_outline_grey600_24dp"
+                    android:tint="@color/star_colour" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

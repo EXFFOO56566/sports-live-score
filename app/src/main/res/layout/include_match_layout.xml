@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fixtureLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fixture_background_color">
+
+    <LinearLayout
+        android:id="@+id/matchTeamsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/favoriteFixture"
+        android:layout_toLeftOf="@+id/favoriteFixture"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/homeTeamLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/teamAImage"
+                android:layout_width="@dimen/fixture_team_icon_size"
+                android:layout_height="@dimen/fixture_team_icon_size"
+                android:src="@drawable/football" />
+
+            <TextView
+                android:id="@+id/teamAName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="Random Name" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include layout="@layout/include_fixture_finished" />
+
+            <include layout="@layout/include_fixture_layout" />
+
+            <include layout="@layout/include_live_game_layout" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/visitingTeamLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/teamBImage"
+                android:layout_width="@dimen/fixture_team_icon_size"
+                android:layout_height="@dimen/fixture_team_icon_size"
+                android:src="@drawable/football" />
+
+            <TextView
+                android:id="@+id/teamBName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="Random Name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/favoriteFixture"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_star_outline_grey600_24dp"
+        android:tint="@color/icon_tint_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/matchTeamsLayout"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/row_divider_bg_color" />
+</RelativeLayout>

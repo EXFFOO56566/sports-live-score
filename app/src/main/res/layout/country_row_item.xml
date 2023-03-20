@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    app:cardBackgroundColor="@color/league_background_color"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:id="@+id/matchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bannerAdsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/student_list_padding"
+                android:paddingLeft="@dimen/student_list_padding">
+
+                <ImageView
+                    android:id="@+id/countryFlag"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_shipping_method_world_normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/countryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_medium"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingEnd="@dimen/student_list_padding"
+                        android:paddingRight="@dimen/student_list_padding"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:text="Random Name" />
+
+                    <TextView
+                        android:id="@+id/competitionsCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_regular"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingEnd="@dimen/student_list_padding"
+                        android:paddingRight="@dimen/student_list_padding"
+                        android:textColor="@color/icon_tint_color"
+                        android:textSize="14sp"
+                        tools:text="Random Name" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/chevron_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/student_list_padding"
+                android:paddingLeft="@dimen/student_list_padding"
+                android:paddingEnd="@dimen/student_list_padding"
+                android:paddingRight="@dimen/student_list_padding"
+                android:src="@drawable/ic_expand_more_grey600_18dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

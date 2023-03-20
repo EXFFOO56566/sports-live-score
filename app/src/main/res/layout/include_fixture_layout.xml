@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/matchLayout"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fixtureDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:fontFamily="@font/font_regular"
+        android:textColor="#9A9AA0"
+        android:textSize="12sp"
+        tools:text="12th Jun" />
+
+    <TextView
+        android:id="@+id/fixtureTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:fontFamily="@font/font_regular"
+        android:textColor="#707072"
+        android:textSize="14sp"
+        tools:text="12:45" />
+</LinearLayout>

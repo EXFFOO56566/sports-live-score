@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseLoadMoreLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D1D1D1"
+    android:layout_below="@+id/baseRecyclerView"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/loadMore"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/font_bold"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:text="Load more" />
+
+    <ProgressBar
+        android:id="@+id/loadMoreProgressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+</LinearLayout>

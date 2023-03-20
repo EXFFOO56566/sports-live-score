@@ -1,0 +1,48 @@
+<resources>
+
+    <!--Translate the following-->
+    <string name="app_name">Futaa</string>
+    <string name="matches">اعواد الكبريت</string>
+    <string name="live">حي</string>
+    <string name="favorites">المفضلة</string>
+    <string name="news">البطولات</string>
+    <string name="goals_scored">Goals Scored</string>
+    <string name="possession">Possession</string>
+    <string name="total_shots">Total Shots</string>
+    <string name="shots_on_target">Shots on Target</string>
+    <string name="fouls">Fouls</string>
+    <string name="corners">Corners</string>
+    <string name="offsides">Offsides</string>
+    <string name="yellow_cards">Yellow Cards</string>
+    <string name="red_cards">Red Cards</string>
+    <string name="saves">Saves</string>
+    <string name="promoted">Promoted</string>
+    <string name="match_details">Match Details</string>
+
+    <string name="sample_company_description">Scorama Football live score. Football live scores on Scorama with 75+ Worldwide soccer leagues. live results, statistics, league tables, H2H and much more.</string>
+    <string name="sample_company_name">Scorama</string>
+    <string name="connect_with_us">Connect with US</string>
+    <string name="copyright_footer">\u00A9 Scorama 2019</string>
+    <string name="upcoming_matches_title">⚽ المباريات القادمة ⚽</string>
+    <string name="live_matches_title">⚡ المباريات الحية ⚡ </string>
+    <string name="favorite_matches_title">⚽ المباريات المفضلة ⚽</string>
+    <string name="soccer_league_title">⚽ بطولات كرة القدم ⚽</string>
+    <string name="tab_upcoming_title">القادمة</string>
+    <string name="tab_today_title">اليوم</string>
+    <string name="tab_recent_title">الأخيرة</string>
+    <string name="date_today">Today</string>
+    <string name="date_tomorrow">Tomorrow</string>
+    <string name="date_yesterday">Yesterday</string>
+    <string name="no_recent_matches_message">No recent matches at the moment</string>
+    <string name="no_upcoming_message">No upcoming matches at the moment</string>
+    <string name="no_live_matches_message">No live matches at the moment</string>
+    <string name="tab_home_title">Home</string>
+    <string name="tab_away_title">Away</string>
+    <string name="tab_latest_title">Latest</string>
+    <string name="no_internet_connection_message">No internet connection. Tap here to retry</string>
+    <string name="error_generic_message">Something went wrong</string>
+    <string name="tab_popular_title">Popular</string>
+    <string name="tab_countries_title">Countries</string>
+
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/standingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/league_background_color"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingTop="4dp"
+    android:paddingRight="8dp">
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="24dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/standings_champions_position_bg"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="1"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/font_regular"
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/teamFlag"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toEndOf="@+id/position"
+        android:layout_toRightOf="@+id/position"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:id="@+id/teamNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/teamFlag"
+        android:layout_toRightOf="@+id/teamFlag"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_bold"
+            android:maxLines="1"
+            android:text="Team"
+            android:textColor="#9E9EA0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/recentForm"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_bold"
+            android:maxLines="1"
+            android:text="wwwww"
+            android:textColor="#C7C7C7"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/teamNameLayout"
+        android:layout_toRightOf="@+id/teamNameLayout"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/matchesPlayed"
+            android:textColor="#BFBFC0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/font_regular"
+            android:text="MP" />
+
+        <TextView
+            android:id="@+id/matchesWon"
+            android:textColor="#BFBFC0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/font_regular"
+            android:text="W" />
+
+        <TextView
+            android:id="@+id/matchesDraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#BFBFC0"
+            android:fontFamily="@font/font_medium"
+            android:text="D" />
+
+        <TextView
+            android:id="@+id/matchesLose"
+            android:textColor="#BFBFC0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/font_regular"
+            android:text="L" />
+
+        <TextView
+            android:id="@+id/goalDiff"
+            android:layout_width="wrap_content"
+            android:textColor="#BFBFC0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/font_medium"
+            android:text="GD" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/font_bold"
+            android:text="Pts"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/teamNameLayout"
+        android:layout_marginTop="4dp"
+        android:background="@color/row_divider_bg_color" />
+</RelativeLayout>

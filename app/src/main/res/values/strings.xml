@@ -1,0 +1,53 @@
+<resources>
+
+    <!--Do not translate the following two-->
+    <string name="ad_unit_id" translatable="false">ca-app-pub-1955254598121537~3604675031</string>
+    <string name="banner_app_id" translatable="false">ca-app-pub-1955254598121537/2291593366</string>
+    <string name="native_unit_id" translatable="false">ca-app-pub-1955254598121537/7734045510</string>
+    <string name="video_reward_unit_id" translatable="false">ca-app-pub-1955254598121537/6427018490</string>
+    <string name="interstial_unit_id" translatable="false">ca-app-pub-1955254598121537/2406949918</string>
+
+    <!--Translate the following-->
+    <string name="app_name">Soka Score</string>
+    <string name="matches">Matches</string>
+    <string name="live">Live</string>
+    <string name="favorites">Favorites</string>
+    <string name="news">Leagues</string>
+    <string name="goals_scored">Goals Scored</string>
+    <string name="possession">Possession</string>
+    <string name="total_shots">Total Shots</string>
+    <string name="shots_on_target">Shots on Target</string>
+    <string name="fouls">Fouls</string>
+    <string name="corners">Corners</string>
+    <string name="offsides">Offsides</string>
+    <string name="yellow_cards">Yellow Cards</string>
+    <string name="red_cards">Red Cards</string>
+    <string name="saves">Saves</string>
+    <string name="promoted">Promoted</string>
+    <string name="match_details">Match Details</string>
+
+    <string name="sample_company_description">Futaa Football live score. Football live scores on Scorama with 75+ Worldwide soccer leagues. live results, statistics, league tables, H2H and much more.</string>
+    <string name="sample_company_name">Futaa</string>
+    <string name="connect_with_us">Connect with US</string>
+    <string name="copyright_footer">\u00A9 Futaa 2019</string>
+    <string name="upcoming_matches_title">Fixtures</string>
+    <string name="live_matches_title">Live Matches</string>
+    <string name="favorite_matches_title">Favorites</string>
+    <string name="soccer_league_title">Leagues</string>
+    <string name="tab_upcoming_title">Upcoming</string>
+    <string name="tab_today_title">Today</string>
+    <string name="tab_recent_title">Recent</string>
+    <string name="date_today">Today</string>
+    <string name="date_tomorrow">Tomorrow</string>
+    <string name="date_yesterday">Yesterday</string>
+    <string name="no_recent_matches_message">No recent matches at the moment</string>
+    <string name="no_upcoming_message">No upcoming matches at the moment</string>
+    <string name="no_live_matches_message">No live matches at the moment</string>
+    <string name="tab_home_title">Home</string>
+    <string name="tab_away_title">Away</string>
+    <string name="tab_latest_title">Latest</string>
+    <string name="no_internet_connection_message">No internet connection. Tap here to retry</string>
+    <string name="error_generic_message">Something went wrong</string>
+    <string name="tab_popular_title">Popular</string>
+    <string name="tab_countries_title">Countries</string>
+</resources>

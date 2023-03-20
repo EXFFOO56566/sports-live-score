@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp">
+
+    <TextView
+        android:id="@+id/homeStatistic"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/statisticName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/awayStatistic"
+        android:layout_toLeftOf="@+id/awayStatistic"
+        android:layout_toEndOf="@+id/homeStatistic"
+        android:layout_toRightOf="@+id/homeStatistic"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="Ball Possession"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/parentLayout"
+        android:layout_below="@+id/statisticName"
+        android:layout_toStartOf="@+id/awayStatistic"
+        android:layout_toLeftOf="@+id/awayStatistic"
+        android:layout_toEndOf="@+id/homeStatistic"
+        android:layout_toRightOf="@+id/homeStatistic"
+        android:background="#30D8F2">
+
+        <View
+            android:id="@+id/homeStatisticView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F6B275" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/awayStatistic"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "276922009214",
+    "firebase_url": "https://futaa-40cc1.firebaseio.com",
+    "project_id": "futaa-40cc1",
+    "storage_bucket": "futaa-40cc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276922009214:android:c2873d79aa81f5e7c7ba2f",
+        "android_client_info": {
+          "package_name": "com.aroniez.futaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276922009214-69nc525kqid67dbdc0r0oimdmccmsj93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aroniez.futaa",
+            "certificate_hash": "55c9a94cc3882d218a7b66d29eaea97e79a7fb0d"
+          }
+        },
+        {
+          "client_id": "276922009214-7tt7ujfvihvc6j3a32l06u8tm7q6doog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAugKXmHpoWVGZ3uNs_EdBZPxy2km9jx4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276922009214-7tt7ujfvihvc6j3a32l06u8tm7q6doog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

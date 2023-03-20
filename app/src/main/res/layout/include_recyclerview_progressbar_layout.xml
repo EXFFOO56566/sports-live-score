@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseNestedLayout"
+    android:fillViewport="true"
+    android:background="@color/default_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_base_recyclerview_layout" />
+
+        <include layout="@layout/include_message_layout" />
+
+        <include layout="@layout/include_progressbar_layout" />
+
+        <include layout="@layout/include_ads_layout" />
+
+        <include layout="@layout/include_load_more_layout" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

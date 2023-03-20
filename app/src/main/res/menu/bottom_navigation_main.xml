@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_live_matches"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/go_to_league"
+        android:title="@string/matches"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_matches"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/goals"
+        android:title="@string/live"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_videos"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_ondemand_video_white_24dp"
+        android:title="Videos"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_teams"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_star_grey600_24dp"
+        android:title="@string/favorites"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_news"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_globe_thin"
+        android:title="@string/news"
+        app:showAsAction="ifRoom" />
+</menu>
